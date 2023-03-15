@@ -107,7 +107,6 @@ def get_submissions(problem_id):
                     break
         else:
             submissions.append((user_id, False))
-        break
             
     driver.quit()
     
