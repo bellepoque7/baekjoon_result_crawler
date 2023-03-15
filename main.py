@@ -1,4 +1,4 @@
-import get_submissions
+from get_submissions import *
 problem_id = 1038
 user_ids = ["snowgot", "aass0900"]
 
