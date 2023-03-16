@@ -115,6 +115,7 @@ def get_submissions(problem_id):
     print('현재 시각 기준 못맞힌 사람은',len(df) - cnt,'명')
     b_id_df = pd.DataFrame(b_id_dict)
     merged_df = pd.merge(df, b_id_df[['id', 'name']], left_on='user_id', right_on=('name',), how='left')
+    merged_df.sort_values(['id'],inplace=True)
     print(merged_df[['user_id','correct','id']])
 
 
