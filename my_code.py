@@ -99,7 +99,7 @@ def get_submissions(problem_id):
         time.sleep(1) # wait for the page to load
         
         table = driver.find_element(By.ID, "status-table")
-        print(type(table))
+        # print(type(table))
         rows = table.find_elements(By.TAG_NAME, "tr")
         
         for row in rows[1:]:
